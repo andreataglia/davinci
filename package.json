@@ -1,0 +1,23 @@
+{
+  "name": "davinci",
+  "version": "1.0.0",
+  "description": "sample project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreataglia/davinci.git"
+  },
+  "author": "andrea taglia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreataglia/davinci/issues"
+  },
+  "homepage": "https://github.com/andreataglia/davinci#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
