@@ -12,14 +12,19 @@ const db = makeDb({
 });
 
 // Constants
-const PORT = 8080;
+const PORT = 9000;
 const HOST = '127.0.0.1';
 
 // App
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(function(req, res, next) {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  next();
+});
 
-app.get('/read', (req, res, next) => {
+app.get('/read', async (req, res) => {
   console.log('GET /read');
   try {
     let query = 'SELECT * FROM `vouchers`';
