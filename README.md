@@ -20,6 +20,9 @@ cd client
 npm run serve
 ```
 
+##### Some screenshots
+the folder screenshots contains some screenshots (indeed!!) for quick reference
+
 ## What's wrong
 this porject "just works". here's few points totally missing.
 - no sql side data correctness check, i.e. no triggers in place
